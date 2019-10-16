@@ -1,0 +1,27 @@
+<table class="table table-striped table-bordered" *ngIf="perspectivesDataReady">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let perspective of perspectives">
+            <td>{{ perspective.id }}</td>
+            <td>{{ perspective.name }}</td>
+        </tr>
+    </tbody>
+</table>
+<nav class="item-color">
+    <ul class="pagination pagination-sm justify-content-end">
+        <li class="page-item">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link">1</a></li>
+        <li class="page-item"><a class="page-link">2</a></li>
+        <li class="page-item"><a class="page-link">3</a></li>
+        <li class="page-item">
+            <a class="page-link">Next</a>
+        </li>
+    </ul>
+</nav>

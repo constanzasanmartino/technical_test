@@ -1,0 +1,47 @@
+.main {
+    margin-top: 20px;
+}
+
+.top {
+    margin-top: 0px;
+}
+
+.name {
+    text-align: left;
+}
+
+.actions {
+    text-align: right;
+}
+
+.icon-plus {
+    font-size: 17px;
+    color: orangered;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.icon-clock {
+    font-size: 17px;
+    color: grey;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.drop {
+    margin-top: 0px;
+}
+
+.nav-font {
+    font-size: small;
+}
+
+h6 {
+    color: grey;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: grey;
+}

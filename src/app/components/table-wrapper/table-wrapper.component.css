@@ -1,0 +1,30 @@
+.main-container {
+    margin-left: 60px;
+    width: fit-content;
+}
+
+.buttons-container {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.table-container {
+    margin-top: 10px;
+}
+
+.item-color {
+    color: orangered;
+}
+
+.nav-link {
+    color: orangered;
+}
+
+.drop {
+    margin-bottom: 20px;
+}
+
+.button-drop {
+    color: white;
+    background-color: orangered;
+}

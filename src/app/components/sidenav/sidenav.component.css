@@ -1,0 +1,47 @@
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+    height: 100%
+}
+
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+}
+
+#sidebar-wrapper {
+    margin-left: -150px;
+    left: 70px;
+    width: 40px;
+    background: #222;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub_icon {
+    float: right;
+    padding-right: 65px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: darkgrey;
+}
+
+.first {
+    background-color: orangered;
+    height: 60px;
+}

@@ -1,0 +1,34 @@
+<div id="wrapper" class="active">
+    <div id="sidebar-wrapper">
+        <ul class="nav flex-column row" id="sidebar">
+            <li class="nav-item first">
+                <i class="fa fa-comment-alt sub_icon" (click)="show()"></i>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="container items col-5 .offset-4 " *ngIf="showComments">
+    <input class="input-comment" placeholder="Make a comment">
+    <br>
+    <br>
+    <div class="but">
+        <button class="btn btn-sm">Cancel</button>
+
+        <button class="btn btn-outline-secondary btn-sm">Submit</button>
+    </div>
+
+    <br>
+    <br>
+    <div class="container comments d-flex align-items-start flex-column" *ngFor="let comment of comments">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{comment.author}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{comment.date}}</h6>
+                <p class="card-text">{{comment.comment}}</p>
+                <p class="card-text"><b>Reply</b></p>
+            </div>
+        </div>
+    </div>
+
+</div>

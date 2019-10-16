@@ -1,0 +1,45 @@
+<div class="flex-fill">
+
+    <div>
+        <div class="container drop form-row buttons-container">
+            <div class="dropdown">
+                <button class="btn btn-sm button-drop dropdown-toggle" type="button">
+          <i class="fas fa-plus icon"></i>
+          Add New KPI
+        </button>
+            </div>
+            <div class="input-group input-group-sm mb-3 col-3">
+                <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Search" aria-describedby="inputGroup-sizing-sm">
+                <div class="input-group-append">
+
+                    <button class="btn  btn-outline-secondary" type="button" id="button-addon2"><i
+              class="fas fa-search icon"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-baseline">
+
+            <div class="container shadow p-3 mb-5 bg-white rounded main-container">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" role="tab" [routerLink]="['/perspectives']"> <b>Perspectives</b> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" role="tab" [routerLink]="['/objectives']"><b>Objectives</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><b>KPIs</b> </a>
+                    </li>
+                </ul>
+                <div class="container  table-container">
+                    <router-outlet></router-outlet>
+
+                </div>
+
+            </div>
+            <app-comments></app-comments>
+
+        </div>
+    </div>
+
+</div>

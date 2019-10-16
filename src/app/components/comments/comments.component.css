@@ -1,0 +1,84 @@
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#wrapper {
+    padding-right: 70px;
+    transition: all .4s ease 0s;
+    height: 100%
+}
+
+#wrapper.active #sidebar-wrapper {
+    right: 150px;
+}
+
+#sidebar-wrapper {
+    margin-right: -150px;
+    right: 70px;
+    width: 40px;
+    background: white;
+    border-color: gray;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub_icon {
+    float: left;
+    padding-right: 65px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: rgb(2, 2, 2);
+}
+
+.first {
+    height: 60px;
+}
+
+.comments {
+    width: max-content;
+    border-color: black;
+}
+
+.card-title {
+    font-size: medium;
+}
+
+.card-subtitle {
+    font-size: small;
+}
+
+.card-text {
+    font-size: small;
+}
+
+.input-comment {
+    text-align: left;
+    /* width: 100%; */
+    position: relative;
+    ;
+}
+
+.but {
+    text-align: right;
+}
+
+.card {
+    width: 100%;
+}
+
+.items {
+    width: 300px;
+    margin-right: 200px;
+}
